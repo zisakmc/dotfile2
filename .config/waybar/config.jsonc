@@ -18,8 +18,10 @@
         "tray",
         "custom/updates",
         // "custom/language",
+        "network",
         "pulseaudio",
-        "pulseaudio#microphone"
+        "battery"
+       // "pulseaudio#microphone"
     ],
 
     "hyprland/window": {
@@ -55,9 +57,9 @@
          "max-length": 10
      },
     "custom/updates": {
-        "exec": "(paru -Qua) | wc -l",
+        "exec": "(yay -Qua) | wc -l",
         "interval": 7200,
-        "format": " {}"
+        "format":"{}"
     },
     // "custom/language": {
     //     "exec": "cat /tmp/kb_layout",
@@ -110,3 +112,28 @@
  //       "scroll-step": 5
  //   }
 }
+
+"battery": {
+    "bat": "BAT",
+    "interval": 60,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{icon}{capacity}%",
+    "format-icons": ["", "", "", "",""],
+    "max-length": 25
+}
+
+  "network": {
+  	"format": "{ifname}",
+  	"format-wifi": "{essid} ({signalStrength}%) ",
+  	"format-ethernet": "{ifname} ",
+  	"format-disconnected": "", //An empty format will hide the module.
+  	"format-disconnected": "",
+  	"tooltip-format": "{ifname}",
+  	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+  	"tooltip-format-ethernet": "{ifname} ",
+  	"tooltip-format-disconnected": "Disconnected",
+  	"max-length": 50
+  }

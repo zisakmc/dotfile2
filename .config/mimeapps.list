@@ -1,0 +1,6 @@
+[Added Associations]
+image/png=viewnior.desktop;sxiv.desktop;
+image/webp=viewnior.desktop;
+
+[Default Applications]
+image/webp=viewnior.desktop

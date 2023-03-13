@@ -6,7 +6,7 @@ window:
 
   decorations: full
 
-  opacity: 0.8
+  opacity: 1.0
   dynamic_title: true
 
   history: 10000
@@ -30,7 +30,7 @@ font:
     family: JetBrainsMono Nerd Font
     #style: Bold Italic
 
-  size: 15
+  size: 10
 
 # Colors (Decay, decayce variant) z0mbi3 Rice
 colors:

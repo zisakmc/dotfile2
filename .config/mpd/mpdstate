@@ -1,19 +1,20 @@
-sw_volume: 100
+sw_volume: 98
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
 state: stop
-current: 4
+current: 5
 random: 0
-repeat: 0
+repeat: 1
 single: 0
 consume: 0
 crossfade: 5
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Niko Moon - GOOD TIME (Official Video)_mKnQXaIlrMo.mp3
-1:Niko Moon - GOOD TIME (Official Video)_mKnQXaIlrMo.mp3
-2:Owl City - Vitamin Sea/01 Vitamin Sea - (SongsLover.com).mp3
-3:Owl City - Vitamin Sea/02 Adam, Check Please - (SongsLover.com).mp3
-4:Owl City - Vitamin Sea/03 Kelly Time - (SongsLover.com).mp3
+0:call of the night (a hyperpop playlist ⧸ mix) [w0vtAaAV9oI].mp3
+1:Tom Odell - Another Love (Official Video) [MwpMEbgC7DA].mp3
+2:Niko Moon - GOOD TIME (Official Video)_mKnQXaIlrMo.mp3
+3:Owl City - Vitamin Sea/01 Vitamin Sea - (SongsLover.com).mp3
+4:Owl City - Vitamin Sea/02 Adam, Check Please - (SongsLover.com).mp3
+5:Owl City - Vitamin Sea/03 Kelly Time - (SongsLover.com).mp3
 playlist_end
