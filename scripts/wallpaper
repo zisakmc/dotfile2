@@ -1,0 +1,5 @@
+#!/bin/bash
+
+swww init
+sleep 2
+swww img $HOME/wallpaper/wallhaven-dgy7mg.jpg

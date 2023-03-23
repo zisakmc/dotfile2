@@ -31,13 +31,13 @@ tooltip {
 }
 
 #workspaces button {
-    padding: 5px;
+    padding: 6px;
     color: #313244;
-    margin-right: 5px;
+    margin-right: 6px;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: #ffffff;
 }
 
 #workspaces button.focused {
@@ -58,6 +58,7 @@ tooltip {
     border-radius: 10px;
 }
 
+#custom-wallpaper,
 #custom-language,
 #cpu,
 #memory,
@@ -131,7 +132,11 @@ tooltip {
     border-left: 0px;
     border-right: 0px;
 }
-
+#custom-wallpaper{
+    color: #f9e2af;
+    border-left: 0px;
+    border-right: 0px;
+}
 #pulseaudio {
     color: #89b4fa;
     border-left: 0px;
@@ -153,8 +158,9 @@ tooltip {
 
 #custom-weather {
     border-radius: 0px 10px 10px 0px;
+    border-radius: 10px 0px 0px 10px;
     border-right: 0px;
-    margin-left: 0px;
+    margin-left: 5px;
 }
 #cpu{
     color: #fab387;

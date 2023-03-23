@@ -1,0 +1,9 @@
+#!/bin/bash
+file=$HOME/wallpaper
+
+pic=$(ls $file/* | shuf -n1)
+echo $pic
+
+
+swww img --transition-type grow --transition-step 90 --transition-pos 0.894,0.977 $pic
+

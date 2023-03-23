@@ -17,7 +17,7 @@
     "modules-right": [
         "tray",
         "custom/updates",
-        // "custom/language",
+        "custom/wallpaper",
         "network",
         "pulseaudio",
         "battery"
@@ -34,13 +34,17 @@
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
             "urgent": "",
-            "active": "",
+           // "active": "",
             "default": ""
           }
     },
@@ -61,12 +65,10 @@
         "interval": 7200,
         "format":"{}"
     },
-    // "custom/language": {
-    //     "exec": "cat /tmp/kb_layout",
-    //     "interval": 3,
-    //     "format": " {}",
-    //     "tooltip": false
-    // },
+     "custom/wallpaper": {
+         "on-click": "$HOME/scripts/wallchanger",
+         "format": ""
+     },
     "custom/weather" : {
         "tooltip" : true,
         "format" : "{}",

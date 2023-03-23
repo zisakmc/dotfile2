@@ -1,6 +1,8 @@
 [Added Associations]
 image/png=viewnior.desktop;sxiv.desktop;
 image/webp=viewnior.desktop;
+application/pdf=org.pwmt.zathura.desktop;
 
 [Default Applications]
 image/webp=viewnior.desktop
+application/pdf=org.pwmt.zathura.desktop
