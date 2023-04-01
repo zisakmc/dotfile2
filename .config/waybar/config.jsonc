@@ -1,0 +1,167 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passtrough": false,
+    "gtk-layer-shell": true,
+    "height": 0,
+    "modules-left": [
+        "clock",
+        "cpu",
+        "memory",
+        "custom/weather",
+        "wlr/workspaces"
+    ],
+    "modules-center": ["hyprland/window"],
+    "modules-right": [
+        "tray",
+        "custom/updates",
+        "custom/media",
+        "custom/wallpaper",
+        "network",
+        "pulseaudio",
+        "battery"
+    ],
+
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "wlr/workspaces": {
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "urgent": "",
+           // "active": "🕷",
+            "default": ""
+          }
+    },
+     "cpu": {
+         "interval": 10,
+         "format": " {}%",
+         "max-length": 10,
+         "on-click": ""
+     },
+     "memory": {
+         "interval": 30,
+         "format": " {}%",
+         "format-alt":" {used:0.1f}G",
+         "max-length": 10
+     },
+    "custom/updates": {
+        "exec": "(yay -Qua) | wc -l",
+        "interval": 7200,
+        "format":"{}"
+    },
+     "custom/wallpaper": {
+         "on-click": "$HOME/scripts/wallchanger",
+         "format": "",
+         "on-click-right" : " sxiv -t $HOME/wallpaper"
+     },
+    "custom/weather" : {
+        "tooltip" : true,
+        "format" : "{}",
+        "restart-interval" : 300,
+        "exec" : "~/.config/waybar/scripts/waybar-wttr.py",
+        "return-type" : "json"
+    },
+    "tray": {
+        "icon-size": 13,
+        "tooltip": false,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{: %R   %d/%m}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": " Muted",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    },
+    
+    "battery": {
+    "bat": "BAT1",
+    "interval": 60,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "",""],
+    "max-length": 35
+},
+ "network": {
+  "interface": "wlan0",
+  	"format": "{ifname}",
+  	"format-wifi": " {essid}",
+  	"format-ethernet": "{ifname} ",
+  	"format-disconnected": "",
+  	"tooltip-format": "{ifname}",
+  	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+  	"tooltip-format-ethernet": "{ifname} ",
+  	"tooltip-format-disconnected": "Disconnected",
+  	"max-length": 50
+  },
+  "custom/media": {
+     "format": "🌸 {}",
+     "escape": true,
+     "return-type": "json",
+     "max-length": 20,
+     "on-click": "playerctl play-pause",
+     "on-click-right": "playerctl stop",
+    "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+     "on-scroll-up": "playerctl next",
+     "on-scroll-down": "playerctl previous",
+     "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources/custom_modules folder
+  }
+ 
+   }      
+
+
+// "network": {
+ //   "interface": "wlan0"
+//  	"format": "{ifname}",
+//  	"format-wifi": "{essid} ({signalStrength}%) ",
+//  	"format-ethernet": "{ifname} ",
+//  	"format-disconnected": "", //An empty format will hide the module.
+//  	"format-disconnected": "",
+//  	"tooltip-format": "{ifname}",
+//  	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+//  	"tooltip-format-ethernet": "{ifname} ",
+//  	"tooltip-format-disconnected": "Disconnected",
+//  	"max-length": 50
+//  }
+//"network":  {
+//     "format" : " {ifname}",
+//     "format-alt" : "說  ({ipaddr})",
+//     "format-disconnected" : "說 Disconnected",
+//    "tooltip" : false
+
+//     }
