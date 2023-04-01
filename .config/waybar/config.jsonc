@@ -17,11 +17,11 @@
     "modules-right": [
         "tray",
         "custom/updates",
+        "custom/media",
         "custom/wallpaper",
         "network",
         "pulseaudio",
         "battery"
-       // "pulseaudio#microphone"
     ],
 
     "hyprland/window": {
@@ -44,7 +44,7 @@
             "8": "八",
             "9": "九",
             "urgent": "",
-           // "active": "",
+           // "active": "🕷",
             "default": ""
           }
     },
@@ -67,7 +67,8 @@
     },
      "custom/wallpaper": {
          "on-click": "$HOME/scripts/wallchanger",
-         "format": ""
+         "format": "",
+         "on-click-right" : " sxiv -t $HOME/wallpaper"
      },
     "custom/weather" : {
         "tooltip" : true,
@@ -85,6 +86,7 @@
         "format": "{: %R   %d/%m}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
+
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "tooltip": false,
@@ -102,40 +104,64 @@
             "car": "",
             "default": ["", "", ""]
         }
-    }
-  //  "pulseaudio#microphone": {
-  //      "format": "{format_source}",
-  //      "tooltip": false,
-  //      "format-source": " {volume}%",
-  //      "format-source-muted": " Muted",
-//        "on-click": "pamixer --default-source -t",
- //       "on-scroll-up": "pamixer --default-source -i 5",
- //       "on-scroll-down": "pamixer --default-source -d 5",
- //       "scroll-step": 5
- //   }
-}
-
-"battery": {
-    "bat": "BAT",
+    },
+    
+    "battery": {
+    "bat": "BAT1",
     "interval": 60,
     "states": {
         "warning": 30,
         "critical": 15
     },
-    "format": "{icon}{capacity}%",
-    "format-icons": ["", "", "", "",""],
-    "max-length": 25
-}
-
-  "network": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "",""],
+    "max-length": 35
+},
+ "network": {
+  "interface": "wlan0",
   	"format": "{ifname}",
-  	"format-wifi": "{essid} ({signalStrength}%) ",
+  	"format-wifi": " {essid}",
   	"format-ethernet": "{ifname} ",
-  	"format-disconnected": "", //An empty format will hide the module.
   	"format-disconnected": "",
   	"tooltip-format": "{ifname}",
   	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
   	"tooltip-format-ethernet": "{ifname} ",
   	"tooltip-format-disconnected": "Disconnected",
   	"max-length": 50
+  },
+  "custom/media": {
+     "format": "🌸 {}",
+     "escape": true,
+     "return-type": "json",
+     "max-length": 20,
+     "on-click": "playerctl play-pause",
+     "on-click-right": "playerctl stop",
+    "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+     "on-scroll-up": "playerctl next",
+     "on-scroll-down": "playerctl previous",
+     "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources/custom_modules folder
   }
+ 
+   }      
+
+
+// "network": {
+ //   "interface": "wlan0"
+//  	"format": "{ifname}",
+//  	"format-wifi": "{essid} ({signalStrength}%) ",
+//  	"format-ethernet": "{ifname} ",
+//  	"format-disconnected": "", //An empty format will hide the module.
+//  	"format-disconnected": "",
+//  	"tooltip-format": "{ifname}",
+//  	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+//  	"tooltip-format-ethernet": "{ifname} ",
+//  	"tooltip-format-disconnected": "Disconnected",
+//  	"max-length": 50
+//  }
+//"network":  {
+//     "format" : " {ifname}",
+//     "format-alt" : "說  ({ipaddr})",
+//     "format-disconnected" : "說 Disconnected",
+//    "tooltip" : false
+
+//     }

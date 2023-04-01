@@ -1,0 +1,6 @@
+2023/04/01-01:13:00.790 1da2b Reusing MANIFEST /home/blue/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2023/04/01-01:13:00.790 1da2b Recovering log #10
+2023/04/01-01:13:00.791 1da2b Reusing old log /home/blue/.config/discord/Local Storage/leveldb/000010.log 
+2023/04/01-01:49:18.914 1df5d Level-0 table #14: started
+2023/04/01-01:49:19.103 1df5d Level-0 table #14: 15302 bytes OK
+2023/04/01-01:49:19.177 1df5d Delete type=0 #10

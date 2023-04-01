@@ -1,0 +1,19 @@
+#!/bin/sh
+path=$HOME/scripts/bg
+while read file
+do
+    case "$1" in
+        "C-c")
+             echo -n "$file" | wl-copy ;;
+        "C-w")
+            #pkill swww || swww init 
+            # sed -i '/^pic=/s/=.*/=\'$(echo -n "$file")'/g' $path
+            # swaybg -i $file -m fill & pkill sxiv ;;
+            if ! swww query; then
+                    swww init
+            fi
+            dunstify -I $file -t 1000 "Wallpaper Change" 
+            swww img $file
+    esac
+done
+                                                                                                                        

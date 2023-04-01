@@ -2,19 +2,21 @@
     left round
     border-radius: 0px 10px 10px 0px;
     
+    font-family: FontAwesome ,Nerd Fonts monospace;
     right round
 
 */
-
+@import "macchiato.css";
 
 
 * {
     border: none;
     border-radius: 0;
-    font-family: FontAwesome ,Nerd Fonts monospace;
+    font-family: FontAwesome, Nerd Fonts monospace;
     font-weight: bold;
     font-size: 15px;
     min-height: 0;
+    color: @text;
 }
 
 window#waybar {
@@ -22,7 +24,7 @@ window#waybar {
     color: #cdd6f4;
 }
 
-tooltip {
+#tooltip {
     background: #1e1e2e;
     border-radius: 10px;
     border-width: 2px;
@@ -37,7 +39,7 @@ tooltip {
 }
 
 #workspaces button.active {
-    color: #ffffff;
+    color: @flamingo;
 }
 
 #workspaces button.focused {
@@ -60,6 +62,7 @@ tooltip {
 
 #custom-wallpaper,
 #custom-language,
+#custom-media,
 #cpu,
 #memory,
 #custom-updates,
@@ -99,33 +102,14 @@ tooltip {
     border-right: 0px;
     margin-left: 10px;
 }
-
-#custom-language {
-    color: #f38ba8;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-#custom-updates {
-    color: #f5c2e7;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 10px 0px 0px 10px;;
-}
-
-#window {
-    border-radius: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
 #clock {
-    color: #fab387;
+    color: #f4dbd6;
     border-radius: 10px 0px 0px 10px;;
     border-radius: 0px 10px 10px 0px;
     margin-left: 10px;
     border-right: 0px;
 }
+
 
 #network {
     color: #f9e2af;
@@ -135,6 +119,11 @@ tooltip {
 #custom-wallpaper{
     color: #f9e2af;
     border-left: 0px;
+    border-right: 0px;
+}
+#custom-media{
+    color: #f38ba8;
+    margin-left: 0px;
     border-right: 0px;
 }
 #pulseaudio {
@@ -155,12 +144,22 @@ tooltip {
     margin-right: 10px;
     border-left: 0px;
 }
-
+#custom-updates {
+    color: #f5c2e7;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 10px 0px 0px 10px;;
+}
 #custom-weather {
     border-radius: 0px 10px 10px 0px;
     border-radius: 10px 0px 0px 10px;
     border-right: 0px;
     margin-left: 5px;
+}
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 #cpu{
     color: #fab387;

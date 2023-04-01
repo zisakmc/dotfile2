@@ -1,0 +1,79 @@
+# Tor state file last generated on 2023-03-29 01:27:03 local time
+# Other times below are in UTC
+# You *do not* need to edit this file.
+
+CircuitBuildTimeBin 1005 1
+CircuitBuildTimeBin 1015 1
+CircuitBuildTimeBin 1085 1
+CircuitBuildTimeBin 1125 1
+CircuitBuildTimeBin 1155 1
+CircuitBuildTimeBin 1195 1
+CircuitBuildTimeBin 1215 1
+CircuitBuildTimeBin 1275 1
+CircuitBuildTimeBin 1285 1
+CircuitBuildTimeBin 1305 2
+CircuitBuildTimeBin 1315 3
+CircuitBuildTimeBin 1325 1
+CircuitBuildTimeBin 1355 3
+CircuitBuildTimeBin 1365 2
+CircuitBuildTimeBin 1405 1
+CircuitBuildTimeBin 1445 1
+CircuitBuildTimeBin 1485 1
+CircuitBuildTimeBin 1515 1
+CircuitBuildTimeBin 1545 1
+CircuitBuildTimeBin 1565 1
+CircuitBuildTimeBin 1625 1
+CircuitBuildTimeBin 1645 1
+CircuitBuildTimeBin 1665 1
+CircuitBuildTimeBin 1775 1
+CircuitBuildTimeBin 1795 1
+CircuitBuildTimeBin 1805 1
+CircuitBuildTimeBin 1855 1
+CircuitBuildTimeBin 1895 1
+CircuitBuildTimeBin 1955 1
+CircuitBuildTimeBin 2015 1
+CircuitBuildTimeBin 2035 1
+CircuitBuildTimeBin 2085 1
+CircuitBuildTimeBin 2095 1
+CircuitBuildTimeBin 2155 1
+CircuitBuildTimeBin 2285 1
+CircuitBuildTimeBin 2295 1
+CircuitBuildTimeBin 2315 1
+CircuitBuildTimeBin 2335 1
+CircuitBuildTimeBin 2455 1
+CircuitBuildTimeBin 2495 1
+CircuitBuildTimeBin 2665 1
+CircuitBuildTimeBin 2825 1
+CircuitBuildTimeBin 2865 1
+CircuitBuildTimeBin 2885 2
+CircuitBuildTimeBin 3005 1
+CircuitBuildTimeBin 3425 1
+CircuitBuildTimeBin 3505 1
+CircuitBuildTimeBin 3685 1
+CircuitBuildTimeBin 3805 1
+CircuitBuildTimeBin 4645 1
+CircuitBuildTimeBin 10265 1
+Dormant 0
+Guard in=default rsa_id=04102613D8F998E956A7868D2DE5A532EE2473EA nickname=Kumquat sampled_on=2023-03-19T07:08:24 sampled_idx=0 sampled_by=0.4.7.13 listed=1 confirmed_on=2023-03-24T05:52:08 confirmed_idx=2 pb_use_attempts=7.000000 pb_use_successes=7.000000 pb_circ_attempts=32.000000 pb_circ_successes=32.000000 pb_successful_circuits_closed=31.000000 pb_collapsed_circuits=1.000000
+Guard in=default rsa_id=75FE5236E67FFA4A44C1152C35EAB36360E4D7DF nickname=iPunchSharks sampled_on=2023-03-26T22:54:43 sampled_idx=1 sampled_by=0.4.7.13 listed=1 confirmed_on=2023-03-23T04:17:57 confirmed_idx=1 pb_use_attempts=2.000000 pb_use_successes=2.000000 pb_circ_attempts=27.000000 pb_circ_successes=26.000000 pb_successful_circuits_closed=26.000000 pb_timeouts=1.000000
+Guard in=default rsa_id=02654B8B9803775860CDF2C7F7109FF68A1349AA nickname=middleIsenguard sampled_on=2023-03-19T06:39:43 sampled_idx=2 sampled_by=0.4.7.13 listed=1 confirmed_on=2023-03-21T14:52:29 confirmed_idx=0
+Guard in=default rsa_id=02C7A07B1214AA338A705EFCCA409D700F757201 nickname=kykeon sampled_on=2023-03-21T19:13:16 sampled_idx=3 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=6C3A20880445D8C6214D063F7BE3D5F5C44C1EF0 nickname=Unnamed sampled_on=2023-03-26T08:27:34 sampled_idx=4 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=8F9CD937D0177BE8AC9E27D18604F93216DFA6A9 nickname=GTUniversdeMagie sampled_on=2023-03-26T05:36:18 sampled_idx=5 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=C3DFB7BD40B072EB6D46578F1BE021FDD9D60713 nickname=imherefortheparty sampled_on=2023-03-28T11:55:49 sampled_idx=6 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=9F95C68AACB67E6258EC7A6BA9406C227ABAD3F0 nickname=Hydra71a sampled_on=2023-03-16T21:24:09 sampled_idx=7 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=1262ECC069D4957D1337E83E0C2437CC80DD3DFA nickname=costafastgarnix sampled_on=2023-03-22T22:10:19 sampled_idx=8 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=E8B88CE36E776B6D009D9D0CCEB76EBE93AB516D nickname=prsv sampled_on=2023-03-18T15:29:33 sampled_idx=9 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=3CB4193EF4E239FCEDC4DC43468E0B0D6B67ACC3 nickname=rofltor10 sampled_on=2023-03-25T10:04:50 sampled_idx=10 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=206B2B8C1AB1E20C02CFE2A913AA8DE169980FC2 nickname=kenobi sampled_on=2023-03-24T10:09:53 sampled_idx=11 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=12D5CABC9A021D94D5869A2692B3CD173DB97263 nickname=freakpark sampled_on=2023-03-28T00:26:35 sampled_idx=12 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=2701FA6E09BEA4C32FE1536AD292F6E419C3AECE nickname=testowov3 sampled_on=2023-03-27T00:00:24 sampled_idx=13 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=9ACD21680CCBE65A5D5A638D85A8388A85D6EE05 nickname=YoYuD1N02NoExit sampled_on=2023-03-17T00:33:09 sampled_idx=14 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=E81EF60A73B3809F8964F73766B01BAA0A171E20 nickname=Chimborazo sampled_on=2023-03-27T06:52:55 sampled_idx=15 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=57C6A0B011E6BA509B3A87F0D1A1007A1A5C40C8 nickname=ape sampled_on=2023-03-18T21:28:40 sampled_idx=16 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=129611304F3D935351FD2550713487EF2EEA505A nickname=sasuke sampled_on=2023-03-18T11:13:21 sampled_idx=17 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=D55BE90E549B4A21033672EA69030D2047FFC58B nickname=CraigBrightbane sampled_on=2023-03-20T15:18:14 sampled_idx=18 sampled_by=0.4.7.13 listed=1
+Guard in=default rsa_id=4745ACB16234385EF1694D530E109F7A573E30C6 nickname=tweinode3 sampled_on=2023-03-20T06:58:03 sampled_idx=19 sampled_by=0.4.7.13 listed=1
+LastWritten 2023-03-28 19:57:03
+TorVersion Tor 0.4.7.13
+TotalBuildTimes 58
