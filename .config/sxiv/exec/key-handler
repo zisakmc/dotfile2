@@ -13,6 +13,7 @@ do
                     swww init
             fi
             dunstify -I $file -t 1000 "Wallpaper Change" 
+            printf "#!/bin/bash \nswaybg -i $file -m fill" > $HOME/scripts/bg
             swww img $file
     esac
 done
